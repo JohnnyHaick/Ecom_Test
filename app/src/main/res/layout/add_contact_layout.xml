@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="#2E8B57"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Community Name"
+        android:id="@+id/comm_name"
+        android:background="@drawable/rounded_editext"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Geographical District"
+        android:id="@+id/geo_district"
+        android:background="@drawable/rounded_editext"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Accessibility"
+        android:id="@+id/access"
+        android:background="@drawable/rounded_editext"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="50dp"           />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Distance To Ecom"
+        android:background="@drawable/rounded_editext"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="50dp"           />
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:hint="Connected To Ecg?"
+        android:id="@+id/conn_to_ecg"
+        android:background="@drawable/rounded_editext"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="50dp"           />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/date_of_license"
+            android:text="Date of License"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Select Date"
+            android:background="@drawable/rounded_button"
+            android:id="@+id/select_date"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/img_view"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Capture"
+            android:background="@drawable/rounded_button"
+            android:id="@+id/capture_button"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:background="@drawable/rounded_button"
+        android:id="@+id/submit_button"/>
+
+</LinearLayout>

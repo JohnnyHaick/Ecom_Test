@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="#fff"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/logotwit"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ecom_logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logotwit"
+                android:id="@+id/rellay1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:id="@+id/toRegis"
+                    android:layout_gravity="center_horizontal"
+                    card_view:cardBackgroundColor="#2E8B57"
+                    card_view:cardElevation="20dp"
+                    card_view:contentPadding="20dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="130dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ecomreg"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="Registration"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:id="@+id/updateReg"
+                    android:layout_gravity="center_horizontal"
+                    card_view:cardBackgroundColor="#2E8B57"
+                    card_view:cardElevation="20dp"
+                    card_view:contentPadding="20dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_below="@+id/toRegis"
+                    android:layout_height="130dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="100dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/ecomupdate"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="#fff"
+                            android:text="Update Profile"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
